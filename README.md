@@ -4,7 +4,7 @@
 
 ---
 
-## About me 🚀
+## About me
 
 Hi there! I'm a Software Developer based in Buenos Aires, Argentina with a passion for building scalable and reliable software solutions and empowering organizations to leverage the power of Artificial Intelligence.
 
