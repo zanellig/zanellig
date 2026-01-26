@@ -31,5 +31,6 @@ Hi there! I'm a Software Developer based in Buenos Aires, Argentina with a passi
 [![ESLint](https://img.shields.io/badge/ESLint-3A33D1?style=flat&logo=eslint&logoColor=white)](https://eslint.org/)
 [![Git](https://img.shields.io/badge/GIT-E44C30?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
 [![Portainer](https://img.shields.io/badge/Portainer-13BEF9?style=flat&logo=portainer&logoColor=white)](https://www.portainer.io/)
+[![Rust](https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat)](https://rust-lang.org/)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=zanellig&layout=compact&theme=github_dark&hide=scss&cache_seconds=3600)](https://github.com/anuraghazra/github-readme-stats)
