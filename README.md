@@ -8,6 +8,8 @@
 
 Hi there! I'm a Software Engineering student based in Buenos Aires, focused on learning about high-scalability while building applications with TypeScript and Python. I design solutions to facilitate workflows that leverage AI-driven strategies. I'm curious about how things work under the hood and I consider myself a fast learner who enjoys experimenting with new tools and patterns.
 
+Currently learning Java.
+
 ## Tech I enjoy working with
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
