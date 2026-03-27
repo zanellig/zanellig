@@ -12,7 +12,9 @@ Currently learning Java.
 
 ## Tech I enjoy working with
 
+[![Python](https://img.shields.io/Python-FFD43B?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Astral (uv)](https://img.shields.io/badge/Astral-D7FF64?style=flat)](https://astral.sh/)
 [![Bun](https://img.shields.io/badge/bun-282a36?style=flat&logo=bun&logoColor=fbf0df)](https://bun.sh/)
 [![Hono](https://img.shields.io/badge/hono-E36002?style=flat&logo=hono&logoColor=white)](https://hono.dev/)
 [![Better Auth](https://img.shields.io/badge/Better%20Auth-000000?style=flat&logo=betterauth&logoColor=white)](https://www.better-auth.com/)
