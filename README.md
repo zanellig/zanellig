@@ -28,7 +28,3 @@ Currently learning Java for uni 👀
 [![Portainer](https://img.shields.io/badge/Portainer-13BEF9?style=flat&logo=portainer&logoColor=white)](https://www.portainer.io/)
 
 I try to contribute to the great OSS projects that I use on the daily.
-
-Anyways, here's some useless info:
-
-[![Top Langs](https://github-readme-stats-beige-psi-50.vercel.app/api/top-langs/?username=zanellig&layout=compact&theme=github_dark&hide=scss&cache_seconds=3600)](https://github.com/anuraghazra/github-readme-stats)
