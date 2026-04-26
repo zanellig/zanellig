@@ -42,7 +42,7 @@ I try to contribute to the great OSS projects that I use on the daily.
 
 <p>
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXprYnJydTB0NGN2ZHdieGFtaWJyd2x5MWgzejFvdXRiOHdiMXVoMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/fng5hqHLnfsD4jsoJc/giphy.gif" width="12" height="12" />
-  <b>Now playing</b>
+  &nbsp;<b>Now playing</b>
 </p>
 
 <p>
