@@ -39,3 +39,18 @@ Currently learning Java for uni 👀
 [![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)](https://www.prometheus.io/)
 
 I try to contribute to the great OSS projects that I use on the daily.
+
+<p>
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXprYnJydTB0NGN2ZHdieGFtaWJyd2x5MWgzejFvdXRiOHdiMXVoMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/fng5hqHLnfsD4jsoJc/giphy.gif" width="14" height="14" />
+  <b>Now playing</b>
+</p>
+
+<p>
+  <a href="https://open.spotify.com/track/5Xak5fmy089t0CXwvjzbbn">
+    <img align="left" src="https://i.scdn.co/image/ab67616d0000b2732d0e5ab5bd2e234fbcffa3e0" width="56" height="56" alt="Ten Album Cover" />
+  </a>
+  <b>Black</b><br/>
+  Pearl Jam
+</p>
+
+<br clear="both"/>
