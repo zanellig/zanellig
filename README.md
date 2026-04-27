@@ -1,12 +1,8 @@
 Hi there! 
 
-I'm a SWE based in Buenos Aires, I like to play with new technologies and stuff that I come accross on the internet.
+I'm a SWE based in Buenos Aires, I like to play with new technologies and stuff I come accross on the internet.
 
 Learning everyday and trying to think outside the box!
-
-If you're developing some tool that you think can revolutionize how we build software, [hmu](https://cal.com/gonzalozanelli/)
-
-Currently learning Java for uni 👀
 
 ## Core stack
 
