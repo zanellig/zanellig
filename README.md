@@ -1,6 +1,6 @@
 Hi there! 
 
-I'm a SWE based in Buenos Aires, I like to play with new technologies and stuff I come accross on the internet.
+I'm a Systems Eng. student and Software Developer based in Buenos Aires, I like to play with new technologies and stuff I come accross on the internet.
 
 Learning everyday and trying to think outside the box!
 
