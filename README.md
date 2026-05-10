@@ -11,8 +11,8 @@ Learning everyday and trying to think outside the box!
 [![Astral (uv, ruff)](https://img.shields.io/badge/Astral-D7FF64?style=flat&logo=astral&logoColor=purple)](https://astral.sh/)
 [![Bun](https://img.shields.io/badge/Bun-282a36?style=flat&logo=bun&logoColor=fbf0df)](https://bun.sh/)
 
-[![Flask](https://img.shields.io/badge/Flask-3BABC3?style=flat&logo=flask&logoColor=white)](https://www.flask.palletsprojects.com/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Flask](https://img.shields.io/badge/Flask-3BABC3?style=flat&logo=flask&logoColor=white)](https://www.flask.palletsprojects.com/)
 [![LangChain](https://img.shields.io/badge/LangChain-000000?style=flat&logo=langchain)](https://langchain.com/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langgraph&logoColor=white)](https://www.langchain.com/langgraph)
 [![LiveKit](https://img.shields.io/badge/LiveKit-070707?style=flat&logo=livekit&logoColor=1FD5F9)](https://livekit.com/)
