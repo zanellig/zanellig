@@ -22,12 +22,15 @@ Learning everyday and trying to think outside the box!
 [![Vite](https://img.shields.io/badge/Vite-9135FF?style=flat&logo=vite&logoColor=white)](https://vite.dev/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs)](https://nextjs.org/)
 
-## Tech I recommend (and use on the daily)
+## Tech I use on the daily
 [![TanStack Query](https://img.shields.io/badge/React_Query-FF4154?style=flat&logo=ReactQuery&logoColor=white)](https://tanstack.com/query/latest)
+[![TanStack Start](https://img.shields.io/badge/TanStack%20Start-053345?style=flat&logo=tanstack)](https://tanstack.com/start/latest)
 [![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?style=flat&logo=drizzle&logoColor=black)](https://orm.drizzle.team/)
+
 [![Hono](https://img.shields.io/badge/Hono-E36002?style=flat&logo=hono&logoColor=white)](https://hono.dev/)
 [![Better Auth](https://img.shields.io/badge/Better%20Auth-000000?style=flat&logo=betterauth&logoColor=white)](https://www.better-auth.com/)
 [![PostHog](https://img.shields.io/badge/PostHog-232429?style=flat&logo=posthog&logoColor=white)](https://posthog.com/)
+[![Convex](https://img.shields.io/badge/Convex-1e1c1a?style=flat&logo=convex)](https://convex.dev/)
 
 [![Portainer](https://img.shields.io/badge/Portainer-13BEF9?style=flat&logo=portainer&logoColor=white)](https://www.portainer.io/)
 [![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)](https://www.grafana.com/)
