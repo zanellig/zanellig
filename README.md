@@ -4,6 +4,8 @@ I'm a Systems Eng. student and Software Developer based in Buenos Aires, I like 
 
 Learning everyday and trying to think outside the box!
 
+<div align="center">
+
 ## Core stack
 
 [![Python](https://img.shields.io/badge/Python-FFD43B?style=flat&logo=python&logoColor=blue)](https://www.python.org/)
@@ -37,6 +39,8 @@ Learning everyday and trying to think outside the box!
 [![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)](https://www.grafana.com/)
 [![k6](https://img.shields.io/badge/k6-7D64FF?style=flat&logo=k6&logoColor=white)](https://www.k6.io/)
 [![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)](https://www.prometheus.io/)
+
+</div>
 
 I try to contribute to the great OSS projects that I use on the daily.
 
