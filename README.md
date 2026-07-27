@@ -40,9 +40,9 @@ Learning everyday and trying to think outside the box!
 [![k6](https://img.shields.io/badge/k6-7D64FF?style=flat&logo=k6&logoColor=white)](https://www.k6.io/)
 [![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)](https://www.prometheus.io/)
 
-</div>
-
 I try to contribute to the great OSS projects that I use on the daily.
+
+</div>
 
 <p align="center">
   <a href="https://zanelli.vercel.app/now-playing/open">
