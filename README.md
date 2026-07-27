@@ -1,4 +1,4 @@
-Hi there! 
+Hi there!
 
 I'm a Systems Eng. student and Software Developer based in Buenos Aires, I like to play with new technologies and stuff I come accross on the internet.
 
@@ -23,6 +23,7 @@ Learning everyday and trying to think outside the box!
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs)](https://nextjs.org/)
 
 ## Tech I use on the daily
+
 [![TanStack Query](https://img.shields.io/badge/React_Query-FF4154?style=flat&logo=ReactQuery&logoColor=white)](https://tanstack.com/query/latest)
 [![TanStack Start](https://img.shields.io/badge/TanStack%20Start-053345?style=flat&logo=tanstack)](https://tanstack.com/start/latest)
 [![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?style=flat&logo=drizzle&logoColor=black)](https://orm.drizzle.team/)
@@ -39,7 +40,7 @@ Learning everyday and trying to think outside the box!
 
 I try to contribute to the great OSS projects that I use on the daily.
 
-<p>
+<p align="center">
   <a href="https://zanelli.vercel.app/now-playing/open">
     <img src="https://zanelli.vercel.app/now-playing.png" width="240" alt="What I'm listening to on Spotify" />
   </a>
