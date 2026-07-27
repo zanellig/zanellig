@@ -41,6 +41,6 @@ I try to contribute to the great OSS projects that I use on the daily.
 
 <p>
   <a href="https://zanelli.vercel.app/now-playing/open">
-    <img src="https://zanelli.vercel.app/now-playing.png" width="360" alt="What I'm listening to on Spotify" />
+    <img src="https://zanelli.vercel.app/now-playing.png" width="240" alt="What I'm listening to on Spotify" />
   </a>
 </p>
