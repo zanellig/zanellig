@@ -48,5 +48,5 @@ I try to contribute to the great OSS projects that I use on the daily.
   <a href="https://zanelli.vercel.app/now-playing/open">
     <img src="https://zanelli.vercel.app/now-playing.png" height="110" alt="What I'm listening to on Spotify" />
   </a>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zanellig&layout=compact&langs_count=6&hide_title=true&hide_border=true&theme=transparent&card_width=260" height="110" alt="Most used languages" />
+  <img src="https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=zanellig&layout=compact&langs_count=6&hide_title=true&hide_border=true&theme=transparent" height="110" alt="Most used languages" />
 </p>
