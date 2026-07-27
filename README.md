@@ -40,7 +40,7 @@ Learning everyday and trying to think outside the box!
 
 I try to contribute to the great OSS projects that I use on the daily.
 
-<p align="center">
+<p align="right">
   <a href="https://zanelli.vercel.app/now-playing/open">
     <img src="https://zanelli.vercel.app/now-playing.png" width="240" alt="What I'm listening to on Spotify" />
   </a>
