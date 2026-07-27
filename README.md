@@ -40,15 +40,7 @@ Learning everyday and trying to think outside the box!
 I try to contribute to the great OSS projects that I use on the daily.
 
 <p>
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXprYnJydTB0NGN2ZHdieGFtaWJyd2x5MWgzejFvdXRiOHdiMXVoMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/fng5hqHLnfsD4jsoJc/giphy.gif" width="12" height="12" align="center" /> <b>Now playing</b>
-</p>
-
-<p>
-  <a href="https://open.spotify.com/track/5Xak5fmy089t0FYmh3VJiY">
-    <img align="left" src="https://i.scdn.co/image/ab67616d0000b2732d0e5ab5bd2e234fbcffa3e0" width="56" alt="Ten Album Cover" />
+  <a href="https://zanelli.vercel.app/now-playing/open">
+    <img src="https://zanelli.vercel.app/now-playing.png" width="360" alt="What I'm listening to on Spotify" />
   </a>
-  <b>Even Flow</b><br/>
-  Pearl Jam
 </p>
-
-<br clear="both"/>
