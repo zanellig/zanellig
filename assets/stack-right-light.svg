@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="224" viewBox="0 0 400 224" role="img" aria-labelledby="stack-title stack-description">
+  <title id="stack-title">Tools I work with</title>
+  <desc id="stack-description">Tailwind CSS, FastAPI, Hono, Bun, Cloudflare Workers, Docker, LangGraph, LiveKit</desc>
+  <!--SVGL and retained Simple Icons logos adapted to a monochrome palette. Sources and license: assets/README.md and assets/SVGL-LICENSE.-->
+  <svg fill="none" viewBox="0 0 54 33" x="28" y="12" width="44" height="44" preserveAspectRatio="xMidYMid meet">
+    <g clip-path="url(#icon-0-a)">
+      <path fill="#24292f" fill-rule="evenodd" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" clip-rule="evenodd" />
+    </g>
+    <defs>
+      <clipPath id="icon-0-a">
+        <path fill="#24292f" d="M0 0h54v32.4H0z" />
+      </clipPath>
+    </defs>
+  </svg>
+  <text x="50" y="82" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">Tailwind CSS</text>
+  <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" fill="#24292f" x="128" y="12" width="44" height="44">
+    <path d="M128 0C57.33 0 0 57.33 0 128s57.33 128 128 128 128-57.33 128-128S198.67 0 128 0Zm-6.67 230.605v-80.288H76.699l64.128-124.922v80.288h42.966L121.33 230.605Z" fill="#24292f" />
+  </svg>
+  <text x="150" y="82" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">FastAPI</text>
+  <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 330" fill="#24292f" x="228" y="12" width="44" height="44">
+    <path d="M134.129.029c.876-.113 1.65.108 2.319.662a1256.253 1256.253 0 0 1 69.573 93.427c16.094 24.231 29.788 49.851 41.082 76.862 18.037 48.108 8.65 89.963-28.16 125.564-32.209 27.22-69.314 37.822-111.318 31.805-50.208-10.237-84.332-39.28-102.373-87.133C.553 225.638-.993 209.736.614 193.51c2.676-27.93 9.302-54.877 19.878-80.838 4.407-10.592 10.15-20.31 17.228-29.154a381.88 381.88 0 0 1 16.565 21.203c2.44 2.55 4.98 4.98 7.62 7.289C82.06 72.01 106.135 34.685 134.13.029Z" fill="#24292f" opacity=".993" />
+    <path d="M129.49 53.7c24.314 28.2 46.29 58.238 65.93 90.114a187.318 187.318 0 0 1 15.24 33.13c8.338 32.804-.607 59.86-26.836 81.169-25.367 17.85-53.196 23.15-83.488 15.902-32.666-10.136-51.55-32.113-56.653-65.929-1.238-10.662-.133-21.043 3.314-31.142a225.41 225.41 0 0 1 17.89-35.78l19.878-29.155a5509.508 5509.508 0 0 0 44.726-58.31Z" fill="#57606a" />
+  </svg>
+  <text x="250" y="82" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">Hono</text>
+  <svg viewBox="0 0 80 70" fill="#ffffff" x="328" y="12" width="44" height="44" preserveAspectRatio="xMidYMid meet">
+    <path d="M71.09 20.74c-.16-.17-.33-.34-.5-.5s-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5A26.46 26.46 0 0 1 75.5 35.7c0 16.57-16.82 30.05-37.5 30.05-11.58 0-21.94-4.23-28.83-10.86l.5.5.5.5.5.5.5.5.5.5.5.5.5.5C19.55 65.3 30.14 69.75 42 69.75c20.68 0 37.5-13.48 37.5-30 0-7.06-3.04-13.75-8.41-19.01Z" />
+    <path d="M73 35.7c0 15.21-15.67 27.54-35 27.54S3 50.91 3 35.7C3 26.27 9 17.94 18.22 13S33.18 3 38 3s8.94 4.13 19.78 10C67 17.94 73 26.27 73 35.7Z" fill="#24292f" />
+    <path data-name="Bottom Shadow" d="M73 35.7a21.67 21.67 0 0 0-.8-5.78c-2.73 33.3-43.35 34.9-59.32 24.94A40 40 0 0 0 38 63.24c19.3 0 35-12.35 35-27.54Z" fill="#57606a" />
+    <path data-name="Light Shine" d="M24.53 11.17C29 8.49 34.94 3.46 40.78 3.45A9.29 9.29 0 0 0 38 3c-2.42 0-5 1.25-8.25 3.13-1.13.66-2.3 1.39-3.54 2.15-2.33 1.44-5 3.07-8 4.7C8.69 18.13 3 26.62 3 35.7v1.19c6.06-21.41 17.07-23.04 21.53-25.72Z" fill="#24292f" />
+    <path d="M35.12 5.53A16.41 16.41 0 0 1 29.49 18c-.28.25-.06.73.3.59 3.37-1.31 7.92-5.23 6-13.14-.08-.45-.67-.33-.67.08Zm2.27 0A16.24 16.24 0 0 1 39 19c-.12.35.31.65.55.36 2.19-2.8 4.1-8.36-1.62-14.36-.29-.26-.74.14-.54.49Zm2.76-.17A16.42 16.42 0 0 1 47 17.12a.33.33 0 0 0 .65.11c.92-3.49.4-9.44-7.17-12.53-.4-.16-.66.38-.33.62Zm-18.46 10.4a16.94 16.94 0 0 0 10.47-9c.18-.36.75-.22.66.18-1.73 8-7.52 9.67-11.12 9.45-.38.01-.37-.52-.01-.63Z" style="fill-rule:evenodd" fill="#57606a" />
+    <path d="M38 65.75C17.32 65.75.5 52.27.5 35.7c0-10 6.18-19.33 16.53-24.92 3-1.6 5.57-3.21 7.86-4.62 1.26-.78 2.45-1.51 3.6-2.19C32 1.89 35 .5 38 .5s5.62 1.2 8.9 3.14c1 .57 2 1.19 3.07 1.87 2.49 1.54 5.3 3.28 9 5.27C69.32 16.37 75.5 25.69 75.5 35.7c0 16.57-16.82 30.05-37.5 30.05ZM38 3c-2.42 0-5 1.25-8.25 3.13-1.13.66-2.3 1.39-3.54 2.15-2.33 1.44-5 3.07-8 4.7C8.69 18.13 3 26.62 3 35.7c0 15.19 15.7 27.55 35 27.55S73 50.89 73 35.7c0-9.08-5.69-17.57-15.22-22.7-3.78-2-6.73-3.88-9.12-5.36-1.09-.67-2.09-1.29-3-1.84C42.63 4 40.42 3 38 3Z" />
+    <g>
+      <path d="M45.05 43a8.93 8.93 0 0 1-2.92 4.71 6.81 6.81 0 0 1-4 1.88A6.84 6.84 0 0 1 34 47.71 8.93 8.93 0 0 1 31.12 43a.72.72 0 0 1 .8-.81h12.34a.72.72 0 0 1 .79.81Z" data-name="Background" fill="#ffffff" />
+      <path data-name="Background" d="M34 47.79a6.91 6.91 0 0 0 4.12 1.9 6.91 6.91 0 0 0 4.11-1.9 10.63 10.63 0 0 0 1-1.07 6.83 6.83 0 0 0-4.9-2.31 6.15 6.15 0 0 0-5 2.78c.23.21.43.41.67.6Z" fill="#57606a" />
+      <path data-name="Outline" d="M34.16 47a5.36 5.36 0 0 1 4.19-2.08 6 6 0 0 1 4 1.69c.23-.25.45-.51.66-.77a7 7 0 0 0-4.71-1.93 6.36 6.36 0 0 0-4.89 2.36 9.53 9.53 0 0 0 .75.73Z" />
+      <path data-name="Outline" d="M38.09 50.19a7.42 7.42 0 0 1-4.45-2 9.52 9.52 0 0 1-3.11-5.05 1.2 1.2 0 0 1 .26-1 1.41 1.41 0 0 1 1.13-.51h12.34a1.44 1.44 0 0 1 1.13.51 1.19 1.19 0 0 1 .25 1 9.52 9.52 0 0 1-3.11 5.05 7.42 7.42 0 0 1-4.44 2Zm-6.17-7.4c-.16 0-.2.07-.21.09a8.29 8.29 0 0 0 2.73 4.37A6.23 6.23 0 0 0 38.09 49a6.28 6.28 0 0 0 3.65-1.73 8.3 8.3 0 0 0 2.72-4.37.21.21 0 0 0-.2-.09Z" />
+    </g>
+    <g>
+      <ellipse data-name="Right Blush" cx="53.22" cy="40.18" rx="5.85" ry="3.44" fill="#57606a" />
+      <ellipse data-name="Left Bluch" cx="22.95" cy="40.18" rx="5.85" ry="3.44" fill="#57606a" />
+      <path d="M25.7 38.8a5.51 5.51 0 1 0-5.5-5.51 5.51 5.51 0 0 0 5.5 5.51Zm24.77 0A5.51 5.51 0 1 0 45 33.29a5.5 5.5 0 0 0 5.47 5.51Z" style="fill-rule:evenodd" />
+      <path d="M24 33.64a2.07 2.07 0 1 0-2.06-2.07A2.07 2.07 0 0 0 24 33.64Zm24.77 0a2.07 2.07 0 1 0-2.06-2.07 2.07 2.07 0 0 0 2.04 2.07Z" style="fill-rule:evenodd" fill="#24292f" />
+    </g>
+  </svg>
+  <text x="350" y="82" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">Bun</text>
+  <svg viewBox="0 0 256 231" width="44" height="44" preserveAspectRatio="xMidYMid meet" fill="#24292f" x="28" y="124">
+    <defs>
+      <linearGradient id="icon-4-a" x1="50%" x2="25.7%" y1="100%" y2="8.7%">
+        <stop offset="0%" stop-color="#57606a" />
+        <stop offset="100%" stop-color="#24292f" />
+      </linearGradient>
+      <linearGradient id="icon-4-b" x1="81%" x2="40.5%" y1="83.7%" y2="29.5%">
+        <stop offset="0%" stop-color="#57606a" />
+        <stop offset="100%" stop-color="#57606a" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient id="icon-4-c" x1="42%" x2="84%" y1="8.7%" y2="79.9%">
+        <stop offset="0%" stop-color="#57606a" />
+        <stop offset="100%" stop-color="#57606a" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient id="icon-4-d" x1="50%" x2="25.7%" y1="100%" y2="8.7%">
+        <stop offset="0%" stop-color="#57606a" />
+        <stop offset="100%" stop-color="#24292f" />
+      </linearGradient>
+      <linearGradient id="icon-4-e" x1="-33.2%" x2="91.7%" y1="100%" y2="0%">
+        <stop offset="0%" stop-color="#57606a" stop-opacity=".8" />
+        <stop offset="49.8%" stop-color="#57606a" stop-opacity=".2" />
+        <stop offset="100%" stop-color="#57606a" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient id="icon-4-f" x1="50%" x2="25.7%" y1="100%" y2="8.7%">
+        <stop offset="0%" stop-color="#24292f" />
+        <stop offset="100%" stop-color="#24292f" />
+      </linearGradient>
+      <linearGradient id="icon-4-g" x1="8.1%" x2="96.5%" y1="1.1%" y2="48.8%">
+        <stop offset="0%" stop-color="#24292f" stop-opacity=".5" />
+        <stop offset="100%" stop-color="#24292f" stop-opacity=".1" />
+      </linearGradient>
+      <linearGradient id="icon-4-h" x1="-13.7%" x2="100%" y1="104.2%" y2="46.2%">
+        <stop offset="0%" stop-color="#24292f" stop-opacity=".5" />
+        <stop offset="100%" stop-color="#24292f" stop-opacity=".1" />
+      </linearGradient>
+    </defs>
+    <path fill="url(#icon-4-a)" d="m65.82 3.324 30.161 54.411-27.698 49.857a16.003 16.003 0 0 0 0 15.573l27.698 49.98-30.16 54.411a32.007 32.007 0 0 1-13.542-12.74L4.27 131.412a32.13 32.13 0 0 1 0-32.007l48.01-83.403a32.007 32.007 0 0 1 13.542-12.68Z" />
+    <path fill="url(#icon-4-b)" d="M68.283 107.654a16.003 16.003 0 0 0 0 15.51l27.698 49.98-30.16 54.412a32.007 32.007 0 0 1-13.542-12.74L4.27 131.412c-3.816-6.586 17.542-14.465 64.014-23.698v-.061Z" opacity=".7" />
+    <path fill="url(#icon-4-c)" d="m68.898 8.802 27.083 48.933-4.493 7.818-23.882-40.44c-6.894-11.264-17.42-5.416-30.591 17.358l1.97-3.386 13.294-23.082a32.007 32.007 0 0 1 13.419-12.68l3.139 5.479h.061Z" opacity=".5" />
+    <path fill="url(#icon-4-d)" d="m203.696 16.003 48.01 83.403c5.725 9.848 5.725 22.159 0 32.007l-48.01 83.402a32.007 32.007 0 0 1-27.698 16.004h-48.01l59.705-107.654a16.003 16.003 0 0 0 0-15.511L127.988 0h48.01a32.007 32.007 0 0 1 27.698 16.003Z" />
+    <path fill="url(#icon-4-e)" d="m173.536 230.45-47.395.43 57.367-108.208a16.619 16.619 0 0 0 0-15.634L126.14 0h10.834l60.197 106.546a16.619 16.619 0 0 1-.062 16.496 9616.838 9616.838 0 0 0-38.592 67.707c-11.695 20.558-6.648 33.791 15.018 39.7Z" />
+    <path fill="url(#icon-4-f)" d="M79.978 230.819c-4.924 0-9.849-1.17-14.157-3.263l59.212-106.792a11.045 11.045 0 0 0 0-10.71L65.821 3.324A32.007 32.007 0 0 1 79.978 0h48.01l59.705 107.654a16.003 16.003 0 0 1 0 15.51L127.988 230.82h-48.01Z" />
+    <path fill="url(#icon-4-g)" d="M183.508 110.054 122.448 0h5.54l59.705 107.654a16.003 16.003 0 0 1 0 15.51L127.988 230.82h-5.54l61.06-110.055a11.045 11.045 0 0 0 0-10.71Z" opacity=".6" />
+    <path fill="url(#icon-4-h)" d="M125.033 110.054 65.821 3.324c1.846-.985 4.062-1.724 6.155-2.34 13.049 23.452 32.315 59.029 57.859 106.67a16.003 16.003 0 0 1 0 15.51L71.053 229.589c-2.093-.616-3.201-1.047-5.17-1.97l59.089-106.792a11.045 11.045 0 0 0 0-10.71l.061-.062Z" opacity=".6" />
+  </svg>
+  <text x="50" y="194" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">Cloudflare</text>
+  <text x="50" y="210" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">Workers</text>
+  <svg viewBox="0 0 24 24" fill="#24292f" x="128" y="124" width="44" height="44" preserveAspectRatio="xMidYMid meet">
+    <path d="M13.98 11.08h2.12a.19.19 0 0 0 .19-.19V9.01a.19.19 0 0 0-.19-.19h-2.12a.18.18 0 0 0-.18.18v1.9c0 .1.08.18.18.18m-2.95-5.43h2.12a.19.19 0 0 0 .18-.19V3.57a.19.19 0 0 0-.18-.18h-2.12a.18.18 0 0 0-.19.18v1.9c0 .1.09.18.19.18m0 2.71h2.12a.19.19 0 0 0 .18-.18V6.29a.19.19 0 0 0-.18-.18h-2.12a.18.18 0 0 0-.19.18v1.89c0 .1.09.18.19.18m-2.93 0h2.12a.19.19 0 0 0 .18-.18V6.29a.18.18 0 0 0-.18-.18H8.1a.18.18 0 0 0-.18.18v1.89c0 .1.08.18.18.18m-2.96 0h2.11a.19.19 0 0 0 .19-.18V6.29a.18.18 0 0 0-.19-.18H5.14a.19.19 0 0 0-.19.18v1.89c0 .1.08.18.19.18m5.89 2.72h2.12a.19.19 0 0 0 .18-.19V9.01a.19.19 0 0 0-.18-.19h-2.12a.18.18 0 0 0-.19.18v1.9c0 .1.09.18.19.18m-2.93 0h2.12a.18.18 0 0 0 .18-.19V9.01a.18.18 0 0 0-.18-.19H8.1a.18.18 0 0 0-.18.18v1.9c0 .1.08.18.18.18m-2.96 0h2.11a.18.18 0 0 0 .19-.19V9.01a.18.18 0 0 0-.18-.19H5.14a.19.19 0 0 0-.19.19v1.88c0 .1.08.19.19.19m-2.92 0h2.12a.18.18 0 0 0 .18-.19V9.01a.18.18 0 0 0-.18-.19H2.22a.18.18 0 0 0-.19.18v1.9c0 .1.08.18.19.18m21.54-1.19c-.06-.05-.67-.51-1.95-.51-.34 0-.68.03-1.01.09a3.77 3.77 0 0 0-1.72-2.57l-.34-.2-.23.33a4.6 4.6 0 0 0-.6 1.43c-.24.97-.1 1.88.4 2.66a4.7 4.7 0 0 1-1.75.42H.76a.75.75 0 0 0-.76.75 11.38 11.38 0 0 0 .7 4.06 6.03 6.03 0 0 0 2.4 3.12c1.18.73 3.1 1.14 5.28 1.14.98 0 1.96-.08 2.93-.26a12.25 12.25 0 0 0 3.82-1.4 10.5 10.5 0 0 0 2.61-2.13c1.25-1.42 2-3 2.55-4.4h.23c1.37 0 2.21-.55 2.68-1 .3-.3.55-.66.7-1.06l.1-.28Z" />
+  </svg>
+  <text x="150" y="194" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">Docker</text>
+  <svg viewBox="0 0 24 24" fill="#24292f" x="228" y="124" width="44" height="44" preserveAspectRatio="xMidYMid meet">
+    <path d="M5 19H10A5 5 0 115 14ZM19 14A5 5 0 1114 19H19ZM10 5A5 5 0 105 10V5ZM19 5V10A5 5 0 1014 5Z" fill="#24292f" />
+  </svg>
+  <text x="250" y="194" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">LangGraph</text>
+  <svg viewBox="0 0 24 24" fill="#24292f" x="328" y="124" width="44" height="44" preserveAspectRatio="xMidYMid meet">
+    <path d="M0 0v24h14.4v-4.799h4.8V24H24v-4.8h-4.799v-4.8h-4.8v4.8H4.8V0H0zm14.4 14.4V9.602h4.801V4.8H24V0h-4.8v4.8h-4.8v4.8H9.6v4.8h4.8z" fill="#24292f" />
+  </svg>
+  <text x="350" y="194" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">LiveKit</text>
+</svg>

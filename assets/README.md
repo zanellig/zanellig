@@ -1,0 +1,38 @@
+# Stack gallery artwork
+
+The gallery uses 14 logos from [SVGL](https://svgl.app/), sourced from
+[pheralb/svgl at f9b726cee1d1](https://github.com/pheralb/svgl/tree/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library).
+The upstream MIT license is preserved in [SVGL-LICENSE](SVGL-LICENSE).
+
+LangGraph and LiveKit retain their [Simple Icons](https://simpleicons.org/) glyphs
+from the initial gallery preview because SVGL does not include these logos.
+The Simple Icons CC0 license is preserved in [SIMPLE-ICONS-LICENSE](SIMPLE-ICONS-LICENSE).
+
+All 16 logos use a monochrome palette. The artwork is split into left and right
+images, each with dark and light versions. The two halves sit side by side on
+desktop and wrap onto separate lines on smaller screens. The README selects
+the version matching the reader's color scheme.
+No external icon requests or custom README CSS are required.
+
+Dark colors: icons `#d1d9e0`, details `#8b949e` and `#a5afb8`, labels `#c9d1d9`.
+Light colors: icons `#24292f`, details `#57606a` and `#424a53`, labels `#24292f`.
+The SQLite wordmark is omitted so only its database and feather symbol appears.
+
+| Technology | Source |
+| --- | --- |
+| Python | [SVGL: python.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/python.svg) |
+| TypeScript | [SVGL: typescript.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/typescript.svg) |
+| React | [SVGL: react_dark.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/react_dark.svg) |
+| TanStack | [SVGL: tanstack_dark.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/tanstack_dark.svg) |
+| Tailwind CSS | [SVGL: tailwindcss.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/tailwindcss.svg) |
+| FastAPI | [SVGL: fastapi.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/fastapi.svg) |
+| Hono | [SVGL: hono.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/hono.svg) |
+| Bun | [SVGL: bun.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/bun.svg) |
+| PostgreSQL | [SVGL: postgresql.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/postgresql.svg) |
+| SQLite | [SVGL: sqlite.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/sqlite.svg) |
+| Redis | [SVGL: redis.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/redis.svg) |
+| Drizzle | [SVGL: drizzle-orm_dark.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/drizzle-orm_dark.svg) |
+| Cloudflare Workers | [SVGL: cloudflare-workers.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/cloudflare-workers.svg) |
+| Docker | [SVGL: docker.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/docker.svg) |
+| LangGraph | [Simple Icons](https://github.com/simple-icons/simple-icons/blob/develop/icons/langgraph.svg) |
+| LiveKit | [Simple Icons](https://github.com/simple-icons/simple-icons/blob/develop/icons/livekit.svg) |
