@@ -26,25 +26,14 @@ Learning everyday and trying to think outside the box!
 
 [![Redis](https://img.shields.io/badge/Redis-CC0000.svg?&style=flat&logo=redis&logoColor=white)](https://redis.io/)
 [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
-[![libSQL](https://img.shields.io/badge/libSQL-4FF8D2?style=flat)](https://github.com/tursodatabase/libsql)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
 [![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat&logo=cloudflareworkers&logoColor=white)](https://developers.cloudflare.com/workers/)
-[![Cloudflare D1](https://img.shields.io/badge/Cloudflare%20D1-F38020?style=flat&logo=cloudflare&logoColor=white)](https://developers.cloudflare.com/d1/)
-[![Cloudflare R2](https://img.shields.io/badge/Cloudflare%20R2-F38020?style=flat&logo=cloudflare&logoColor=white)](https://developers.cloudflare.com/r2/)
 
 ## Tech I use on the daily
 
-[![TanStack Query](https://img.shields.io/badge/React_Query-FF4154?style=flat&logo=ReactQuery&logoColor=white)](https://tanstack.com/query/latest)
-[![TanStack Start](https://img.shields.io/badge/TanStack%20Start-053345?style=flat&logo=tanstack)](https://tanstack.com/start/latest)
-[![TanStack Router](https://img.shields.io/badge/TanStack%20Router-FF4154?style=flat&logo=tanstack&logoColor=white)](https://tanstack.com/router/latest)
-[![TanStack DB](https://img.shields.io/badge/TanStack%20DB-053345?style=flat&logo=tanstack&logoColor=white)](https://tanstack.com/db/latest)
-
-[![TanStack Table](https://img.shields.io/badge/TanStack%20Table-FF4154?style=flat&logo=tanstack&logoColor=white)](https://tanstack.com/table/latest)
-[![TanStack Form](https://img.shields.io/badge/TanStack%20Form-053345?style=flat&logo=tanstack&logoColor=white)](https://tanstack.com/form/latest)
-[![TanStack Virtual](https://img.shields.io/badge/TanStack%20Virtual-FF4154?style=flat&logo=tanstack&logoColor=white)](https://tanstack.com/virtual/latest)
-
+[![TanStack](https://img.shields.io/badge/TanStack-053345?style=flat&logo=tanstack&logoColor=white)](https://tanstack.com/)
 [![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=flat&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
 [![Base UI](https://img.shields.io/badge/Base%20UI-000000?style=flat&logo=baseui&logoColor=white)](https://base-ui.com/)
 [![Zustand](https://img.shields.io/badge/Zustand-443E38?style=flat)](https://zustand.docs.pmnd.rs/)
