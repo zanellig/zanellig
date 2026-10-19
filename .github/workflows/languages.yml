@@ -1,0 +1,25 @@
+name: Update languages
+
+on:
+  schedule:
+    - cron: "0 12 * * 1" # Mondays 09:00 in Buenos Aires (UTC-3)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      # Fine-grained tokens, one per owner, all repositories, "Metadata: read" only
+      - run: python3 .github/scripts/languages.py
+        env:
+          ZANELLIG_TOKEN: ${{ secrets.ZANELLIG_TOKEN }}
+          COGNIARG_TOKEN: ${{ secrets.COGNIARG_TOKEN }}
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/languages-*.svg
+          git diff --cached --quiet || { git commit -m "chore: update languages"; git push; }

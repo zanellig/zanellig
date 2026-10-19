@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="192" viewBox="0 0 400 192" role="img">
+  <title>Personal repos: TypeScript 77%, Python 11%, Java 3.6%, Rust 3.3%, JavaScript 2.6%, Shell 2.0%. cogniarg: TypeScript 68%, Python 28%, JavaScript 2.2%, Shell 1.1%, PLpgSQL 0.8%, Rust 0.3%</title>
+  <text x="116" y="12" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">TypeScript</text>
+  <text x="210" y="12" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">Python</text>
+  <text x="300" y="12" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">Also</text>
+  <text x="0" y="54" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#24292f" text-anchor="start">Personal repos</text>
+  <text x="0" y="72" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">528k lines</text>
+  <text x="116" y="70" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="32" font-weight="600" fill="#24292f" text-anchor="start">77%</text>
+  <text x="210" y="70" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="32" font-weight="600" fill="#57606a" text-anchor="start">11%</text>
+  <text x="300" y="38" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">Java</text>
+  <text x="400" y="38" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="end">3.6%</text>
+  <text x="300" y="54" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">Rust</text>
+  <text x="400" y="54" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="end">3.3%</text>
+  <text x="300" y="70" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">JavaScript</text>
+  <text x="400" y="70" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="end">2.6%</text>
+  <text x="300" y="86" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">Shell</text>
+  <text x="400" y="86" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="end">2.0%</text>
+  <text x="0" y="142" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#24292f" text-anchor="start">cogniarg</text>
+  <text x="0" y="160" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">652k lines</text>
+  <text x="116" y="158" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="32" font-weight="600" fill="#24292f" text-anchor="start">68%</text>
+  <text x="210" y="158" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="32" font-weight="600" fill="#57606a" text-anchor="start">28%</text>
+  <text x="300" y="126" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">JavaScript</text>
+  <text x="400" y="126" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="end">2.2%</text>
+  <text x="300" y="142" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">Shell</text>
+  <text x="400" y="142" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="end">1.1%</text>
+  <text x="300" y="158" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">PLpgSQL</text>
+  <text x="400" y="158" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="end">0.8%</text>
+  <text x="300" y="174" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">Rust</text>
+  <text x="400" y="174" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#57606a" text-anchor="end">0.3%</text>
+  <line x1="0" y1="102" x2="400" y2="102" stroke="#eaeef2" stroke-width="1"/>
+</svg>
