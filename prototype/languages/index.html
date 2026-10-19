@@ -1,0 +1,256 @@
+<!doctype html>
+<!--
+  PROTOTYPE, throwaway. Round 4: BC1b (stacked tiles) and BC1c (grid) without dropping languages,
+  switchable via ?variant=BC1b|BC1c|BC1d|BC1f (plus ?theme=dark|light, ?metric=recent|share|bytes, ?width=desktop|mobile).
+  Data: data.js, snapshotted by fetch_langs.py (personal non-fork repos + cogniarg repos with my commits).
+  Run from the repo root: python3 -m http.server 8000  ->  http://localhost:8000/prototype/languages/
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PROTOTYPE · languages section</title>
+<script src="data.js"></script>
+<style>
+  :root[data-theme="dark"] { --page:#0d1117; --fg:#f0f6fc; --muted:#9198a1; --border:#3d444d; --link:#4493f8; }
+  :root[data-theme="light"] { --page:#ffffff; --fg:#1f2328; --muted:#59636e; --border:#d1d9e0; --link:#0969da; }
+  body { margin:0; background:var(--page); color:var(--fg); font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif; }
+  .readme { box-sizing:border-box; width:878px; margin:32px auto 24px; border:1px solid var(--border); border-radius:6px; padding:24px; }
+  :root[data-width="mobile"] .readme { width:375px; padding:16px; }
+  .readme .path { font-size:12px; color:var(--muted); margin:-8px 0 16px; }
+  .readme h2 { font-size:1.5em; font-weight:600; margin:24px 0 16px; padding-bottom:.3em; border-bottom:1px solid var(--border); line-height:1.25; }
+  .readme p { margin:0 0 16px; }
+  .readme a { color:var(--link); text-decoration:none; }
+  .readme img { max-width:100%; box-sizing:content-box; vertical-align:middle; }
+  .readme sub { color:var(--muted); }
+  #state { box-sizing:border-box; width:878px; margin:0 auto 120px; padding:16px; border:2px dashed #d29922; border-radius:6px; font:12px/1.5 ui-monospace,monospace; }
+  :root[data-width="mobile"] #state { width:375px; }
+  #state table { border-collapse:collapse; } #state td, #state th { padding:1px 12px 1px 0; text-align:right; } #state td:first-child, #state th:first-child { text-align:left; }
+  #bar { position:fixed; left:50%; bottom:20px; transform:translateX(-50%); display:flex; gap:8px; align-items:center; padding:8px 12px; border-radius:999px; background:#ffd33d; color:#000; box-shadow:0 6px 24px rgba(0,0,0,.45); font:600 13px system-ui,sans-serif; z-index:9; }
+  #bar button, #bar select { font:inherit; border:1px solid #0003; border-radius:999px; background:#fff8; padding:4px 10px; cursor:pointer; }
+  #label { min-width:300px; text-align:center; }
+</style>
+</head>
+<body>
+<article class="readme" id="readme"></article>
+<section id="state"></section>
+<nav id="bar">
+  <button id="prev" title="Previous variant (←)">←</button><span id="label"></span><button id="next" title="Next variant (→)">→</button>
+  <button id="theme"></button>
+  <select id="metric"></select>
+  <button id="width"></button>
+</nav>
+<script>
+const MARKUP = new Set(["HTML", "CSS", "SCSS", "Sass", "Less", "Stylus", "MDX", "Jupyter Notebook"]);
+const METRICS = {
+  recent: { name: "lines added, last 12 mo", unit: "lines", caption: "Share of the lines I added in the last 12 months", weight: (r) => r.recentAdds },
+  share:  { name: "bytes × my share", unit: "bytes", caption: "Repo size weighted by my share of each repo's additions", weight: (r, bytes) => bytes * r.share },
+  bytes:  { name: "raw bytes (readme-stats)", unit: "bytes", caption: "Raw repo size by language", weight: (r, bytes) => bytes },
+};
+const T = {
+  dark:  { ink: "#c9d1d9", strong: "#d1d9e0", muted: "#8b949e", track: "#21262d" },
+  light: { ink: "#24292f", strong: "#24292f", muted: "#57606a", track: "#eaeef2" },
+};
+const FONT = "-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif";
+
+function aggregate(metric) {
+  const by = new Map();
+  let total = 0;
+  for (const r of REPOS) {
+    const code = Object.entries(r.langs).filter(([l]) => !MARKUP.has(l));
+    const bytes = code.reduce((s, [, b]) => s + b, 0);
+    if (!bytes) continue;
+    const w = METRICS[metric].weight(r, bytes);
+    for (const [l, b] of code) {
+      const e = by.get(l) ?? { lang: l, zanellig: 0, cogniarg: 0 };
+      e[r.owner] += (w * b) / bytes;
+      by.set(l, e);
+    }
+    total += w;
+  }
+  const rows = [...by.values()].map((e) => ({ ...e, value: e.zanellig + e.cogniarg })).sort((a, b) => b.value - a.value);
+  return { total, rows };
+}
+// rows as fractions: all repos combined (with the source split), or one owner's repos on their own
+const combined = (agg) => agg.rows.map((r) => ({ lang: r.lang, p: r.value / agg.total, own: r.zanellig / agg.total, org: r.cogniarg / agg.total }));
+const byOwner = (agg, owner) => {
+  const tot = agg.rows.reduce((s, r) => s + r[owner], 0);
+  return { tot, rows: agg.rows.filter((r) => r[owner] > 0).map((r) => ({ lang: r.lang, p: r[owner] / tot })).sort((a, b) => b.p - a.p) };
+};
+
+const fmt = (p) => (p >= 0.1 ? `${Math.round(p * 100)}%` : p >= 0.001 ? `${(p * 100).toFixed(1)}%` : "<0.1%");
+const fmtTotal = (n, metric) => METRICS[metric].unit === "lines"
+  ? (n >= 1e6 ? `${(n / 1e6).toFixed(1)}M lines` : `${Math.round(n / 1000)}k lines`)
+  : `${(n / 1e6).toFixed(1)} MB`;
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const text = (x, y, s, { size = 12, fill, anchor = "start", weight = 400 } = {}) =>
+  `<text x="${x}" y="${y}" font-family="${FONT}" font-size="${size}" font-weight="${weight}" fill="${fill}" text-anchor="${anchor}">${esc(s)}</text>`;
+const svg = (w, h, title, body) =>
+  `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img"><title>${esc(title)}</title>${body}</svg>`;
+const img = (s, w, alt) => `<img width="${w}" alt="${esc(alt)}" src="data:image/svg+xml;charset=utf-8,${encodeURIComponent(s)}">`;
+// share of one source, "–" when it never touched that language
+const pct = (p) => (p ? fmt(p) : "–");
+// two hero numbers + a quiet tail list
+const heroes = (t, rows, top) => {
+  const [a, b, ...tail] = rows;
+  const tile = (x, r, fill) => text(x, top + 46, pct(r.p), { fill, size: 40, weight: 600 }) + text(x + 2, top + 70, r.lang, { fill: t.ink, size: 13 });
+  let body = tile(0, a, t.strong) + tile(132, b, t.muted);
+  tail.slice(0, 4).forEach((r, i) => {
+    const y = top + 18 + i * 18;
+    body += text(272, y, r.lang, { fill: t.muted, size: 12 }) + text(400, y, pct(r.p), { fill: t.muted, size: 12, anchor: "end" });
+  });
+  return body + `<line x1="258" y1="${top + 6}" x2="258" y2="${top + 74}" stroke="${t.track}" stroke-width="1"/>`;
+};
+const altRows = (rows, n = 6) => rows.slice(0, n).map((r) => `${r.lang} ${pct(r.p)}`).join(", ");
+const caption = (m) => `<p><sub>${METRICS[m].caption}.</sub></p>`;
+const section = (html, metric) => `<h2>Languages</h2><p>${html}</p>${caption(metric)}`;
+// "Personal repos  528k lines" as one text run, so the total follows the title without measuring it
+const titleLine = (x, y, t, title, total) =>
+  `<text x="${x}" y="${y}" font-family="${FONT}"><tspan font-size="14" font-weight="600" fill="${t.ink}">${esc(title)}</tspan><tspan dx="8" font-size="12" fill="${t.muted}">${esc(total)}</tspan></text>`;
+const SOURCES = [["zanellig", "Personal repos"], ["cogniarg", "cogniarg"]];
+// the same languages, in combined order, for every source, so rows line up across sources
+const aligned = (agg, owner, n) => {
+  const { tot, rows } = byOwner(agg, owner);
+  return { tot, rows: combined(agg).slice(0, n).map(({ lang }) => ({ lang, p: rows.find((r) => r.lang === lang)?.p ?? 0 })) };
+};
+
+const VARIANTS = {
+  BC1b: {
+    name: "Stacked, one image (reference)",
+    render({ t, agg, metric }) {
+      let body = "", alt = [];
+      SOURCES.forEach(([owner, title], i) => {
+        const { tot, rows } = byOwner(agg, owner);
+        const top = i * 128;
+        body += titleLine(0, top + 16, t, title, fmtTotal(tot, metric)) + heroes(t, rows, top + 26);
+        alt.push(`${title}: ${altRows(rows, 5)}`);
+      });
+      body += `<line x1="0" y1="116" x2="400" y2="116" stroke="${t.track}" stroke-width="1"/>`;
+      return section(img(svg(400, 232, alt.join(". "), body), 400, alt.join(". ")), metric);
+    },
+  },
+  BC1c: {
+    name: "Grid (reference)",
+    render({ t, agg, metric }) {
+      const cols = combined(agg).slice(0, 2).map((r) => r.lang);
+      let body = text(120, 12, cols[0], { fill: t.muted, size: 11 }) + text(220, 12, cols[1], { fill: t.muted, size: 11 }) + text(310, 12, "Also", { fill: t.muted, size: 11 });
+      const alt = [];
+      SOURCES.forEach(([owner, title], i) => {
+        const { tot, rows } = byOwner(agg, owner);
+        const top = 24 + i * 68, get = (l) => rows.find((r) => r.lang === l);
+        body += text(0, top + 30, title, { fill: t.ink, size: 13, weight: 600 }) + text(0, top + 48, fmtTotal(tot, metric), { fill: t.muted, size: 11 });
+        cols.forEach((l, c) => { body += text(120 + c * 100, top + 46, pct(get(l)?.p), { fill: c ? t.muted : t.strong, size: 32, weight: 600 }); });
+        rows.filter((r) => !cols.includes(r.lang)).slice(0, 2).forEach((r, j) => {
+          body += text(310, top + 26 + j * 18, r.lang, { fill: t.muted, size: 11 }) + text(400, top + 26 + j * 18, pct(r.p), { fill: t.muted, size: 11, anchor: "end" });
+        });
+        alt.push(`${title}: ${altRows(rows, 4)}`);
+      });
+      body += `<line x1="0" y1="88" x2="400" y2="88" stroke="${t.track}" stroke-width="1"/>`;
+      return section(img(svg(400, 160, alt.join(". "), body), 400, alt.join(". ")), metric);
+    },
+  },
+  BC1d: {
+    name: "Grid + each source's own next 4 languages",
+    render({ t, agg, metric }) {
+      const [c0, c1] = combined(agg).slice(0, 2).map((r) => r.lang);
+      let body = text(116, 12, c0, { fill: t.muted, size: 11 }) + text(210, 12, c1, { fill: t.muted, size: 11 }) + text(300, 12, "Also", { fill: t.muted, size: 11 });
+      const alt = [];
+      SOURCES.forEach(([owner, title], i) => {
+        const { tot, rows } = byOwner(agg, owner);
+        const top = 24 + i * 88, get = (l) => rows.find((r) => r.lang === l)?.p;
+        body += text(0, top + 30, title, { fill: t.ink, size: 13, weight: 600 }) + text(0, top + 48, fmtTotal(tot, metric), { fill: t.muted, size: 11 })
+          + text(116, top + 46, pct(get(c0)), { fill: t.strong, size: 32, weight: 600 })
+          + text(210, top + 46, pct(get(c1)), { fill: t.muted, size: 32, weight: 600 });
+        // only languages this source actually has, so no dashes
+        rows.filter((r) => r.lang !== c0 && r.lang !== c1).slice(0, 4).forEach((r, j) => {
+          const y = top + 14 + j * 16;
+          body += text(300, y, r.lang, { fill: t.muted, size: 11 }) + text(400, y, pct(r.p), { fill: t.muted, size: 11, anchor: "end" });
+        });
+        alt.push(`${title}: ${altRows(rows)}`);
+      });
+      body += `<line x1="0" y1="102" x2="400" y2="102" stroke="${t.track}" stroke-width="1"/>`;
+      return section(img(svg(400, 192, alt.join(". "), body), 400, alt.join(". ")), metric);
+    },
+  },
+  BC1f: {
+    name: "Grid transposed: languages as rows",
+    render({ t, agg, metric }) {
+      const cols = SOURCES.map(([owner, title]) => ({ title, ...aligned(agg, owner, 7) }));
+      const X = [270, 400];
+      let body = "";
+      cols.forEach((c, k) => {
+        body += text(X[k], 14, c.title, { fill: t.ink, size: 13, weight: 600, anchor: "end" }) + text(X[k], 30, fmtTotal(c.tot, metric), { fill: t.muted, size: 11, anchor: "end" });
+      });
+      let y = 40;
+      cols[0].rows.forEach((r, i) => {
+        const hero = i < 2, fill = i === 0 ? t.strong : t.muted;
+        if (i === 2) { body += `<line x1="0" y1="${y + 12}" x2="400" y2="${y + 12}" stroke="${t.track}" stroke-width="1"/>`; y += 13; }
+        y += hero ? 40 : 19;
+        body += text(0, y, r.lang, { fill: hero ? t.ink : t.muted, size: hero ? 13 : 12 });
+        cols.forEach((c, k) => { body += text(X[k], y, pct(c.rows[i].p), { fill: hero ? fill : t.muted, size: hero ? 28 : 12, weight: hero ? 600 : 400, anchor: "end" }); });
+      });
+      const alt = cols.map((c) => `${c.title}: ${altRows(c.rows, 7)}`).join(". ");
+      return section(img(svg(400, y + 8, alt, body), 400, alt), metric);
+    },
+  },
+};
+
+const README = (theme, after) => `
+  <div class="path">zanellig / README.md</div>
+  <p>Hi there!</p>
+  <p>I'm a Systems Eng. student and Software Developer based in Buenos Aires, I like to play with new technologies and stuff I come accross on the internet.</p>
+  <p>Learning everyday and trying to think outside the box!</p>
+  <h2>Tools I work with</h2>
+  <p><img src="../../assets/stack-left-${theme}.svg" width="400" alt="Python, TypeScript, React, TanStack, PostgreSQL, SQLite, Redis, and Drizzle">
+  <img src="../../assets/stack-right-${theme}.svg" width="400" alt="Tailwind CSS, FastAPI, Hono, Bun, Cloudflare Workers, Docker, LangGraph, and LiveKit"></p>
+  ${after}
+  <p>I try to contribute to the great OSS projects that I use on the daily.</p>
+  <p><a href="https://zanelli.vercel.app/now-playing/open"><img src="https://zanelli.vercel.app/now-playing.png" width="240" alt="What I'm listening to on Spotify"
+    onerror="this.outerHTML='<span style=&quot;display:inline-block;width:240px;height:80px;border:1px dashed var(--border);border-radius:8px&quot;></span>'"></a></p>`;
+
+const keys = Object.keys(VARIANTS);
+const params = () => {
+  const p = new URLSearchParams(location.search);
+  return {
+    variant: keys.includes(p.get("variant")) ? p.get("variant") : keys[0],
+    theme: p.get("theme") ?? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"),
+    metric: METRICS[p.get("metric")] ? p.get("metric") : "recent",
+    width: p.get("width") ?? "desktop",
+  };
+};
+const set = (k, v) => { const u = new URL(location); u.searchParams.set(k, v); history.replaceState(null, "", u); render(); };
+const cycle = (d) => { const { variant } = params(); set("variant", keys[(keys.indexOf(variant) + d + keys.length) % keys.length]); };
+
+function render() {
+  const { variant, theme, metric, width } = params();
+  Object.assign(document.documentElement.dataset, { theme, width });
+  const agg = aggregate(metric);
+  readme.innerHTML = README(theme, VARIANTS[variant].render({ t: T[theme], theme, metric, agg }));
+
+  label.textContent = `${variant} (${VARIANTS[variant].name})`;
+  document.getElementById("theme").textContent = theme;
+  document.getElementById("width").textContent = width;
+  document.getElementById("metric").value = metric;
+
+  const org = REPOS.filter((r) => r.owner === "cogniarg").length;
+  const own = agg.rows.reduce((s, r) => s + r.zanellig, 0);
+  state.innerHTML = `<b>PROTOTYPE STATE</b> · variant ${variant} · theme ${theme} · width ${width} · metric <b>${metric}</b> (${METRICS[metric].caption.toLowerCase()})<br>
+    ${REPOS.length - org} personal + ${org} cogniarg repos · total ${fmtTotal(agg.total, metric)} · personal ${fmt(own / agg.total)} / cogniarg ${fmt(1 - own / agg.total)} · markup excluded: ${[...MARKUP].join(", ")}
+    <table><tr><th>language</th><th>total</th><th>personal</th><th>cogniarg</th></tr>
+    ${agg.rows.slice(0, 12).map((r) => `<tr><td>${r.lang}</td><td>${fmt(r.value / agg.total)}</td><td>${fmt(r.zanellig / agg.total)}</td><td>${fmt(r.cogniarg / agg.total)}</td></tr>`).join("")}</table>`;
+}
+
+document.getElementById("metric").innerHTML = Object.entries(METRICS).map(([k, m]) => `<option value="${k}">${m.name}</option>`).join("");
+prev.onclick = () => cycle(-1);
+next.onclick = () => cycle(1);
+document.getElementById("theme").onclick = () => set("theme", params().theme === "dark" ? "light" : "dark");
+document.getElementById("width").onclick = () => set("width", params().width === "desktop" ? "mobile" : "desktop");
+document.getElementById("metric").onchange = (e) => set("metric", e.target.value);
+addEventListener("keydown", (e) => {
+  if (e.target.closest("input, textarea, select, [contenteditable]")) return;
+  if (e.key === "ArrowLeft") cycle(-1);
+  if (e.key === "ArrowRight") cycle(1);
+});
+render();
+</script>
+</body>
+</html>
