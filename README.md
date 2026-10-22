@@ -17,6 +17,17 @@ Learning everyday and trying to think outside the box!
   </picture>
 </p>
 
+## Languages
+
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg" />
+    <img src="assets/languages-light.svg" width="400" alt="Share of the lines I added in the last 12 months by language, in my personal repos and in cogniarg" />
+  </picture>
+</p>
+
+<sub>Share of the lines I added in the last 12 months.</sub>
+
 I try to contribute to the great OSS projects that I use on the daily.
 
 <p>
