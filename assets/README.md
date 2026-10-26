@@ -4,8 +4,8 @@ The gallery uses 14 logos from [SVGL](https://svgl.app/), sourced from
 [pheralb/svgl at f9b726cee1d1](https://github.com/pheralb/svgl/tree/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library).
 The upstream MIT license is preserved in [SVGL-LICENSE](SVGL-LICENSE).
 
-LangGraph and LiveKit retain their [Simple Icons](https://simpleicons.org/) glyphs
-from the initial gallery preview because SVGL does not include these logos.
+LangGraph and WebRTC use [Simple Icons](https://simpleicons.org/) glyphs
+because SVGL does not include these logos.
 The Simple Icons CC0 license is preserved in [SIMPLE-ICONS-LICENSE](SIMPLE-ICONS-LICENSE).
 
 All 16 logos use a monochrome palette. The artwork is split into left and right
@@ -35,7 +35,7 @@ The SQLite wordmark is omitted so only its database and feather symbol appears.
 | Cloudflare Workers | [SVGL: cloudflare-workers.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/cloudflare-workers.svg) |
 | Docker | [SVGL: docker.svg](https://github.com/pheralb/svgl/blob/f9b726cee1d1f3c697a18c880185e89d9a55bb70/static/library/docker.svg) |
 | LangGraph | [Simple Icons](https://github.com/simple-icons/simple-icons/blob/develop/icons/langgraph.svg) |
-| LiveKit | [Simple Icons](https://github.com/simple-icons/simple-icons/blob/develop/icons/livekit.svg) |
+| WebRTC | [Simple Icons](https://github.com/simple-icons/simple-icons/blob/develop/icons/webrtc.svg) |
 
 ## Languages chart
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="224" viewBox="0 0 400 224" role="img" aria-labelledby="stack-title stack-description">
   <title id="stack-title">Tools I work with</title>
-  <desc id="stack-description">Tailwind CSS, FastAPI, Hono, Bun, Cloudflare Workers, Docker, LangGraph, LiveKit</desc>
+  <desc id="stack-description">Tailwind CSS, FastAPI, Hono, Bun, Cloudflare Workers, Docker, LangGraph, WebRTC</desc>
   <!--SVGL and retained Simple Icons logos adapted to a monochrome palette. Sources and license: assets/README.md and assets/SVGL-LICENSE.-->
   <svg fill="none" viewBox="0 0 54 33" x="28" y="12" width="44" height="44" preserveAspectRatio="xMidYMid meet">
     <g clip-path="url(#icon-0-a)">
@@ -99,7 +99,7 @@
   </svg>
   <text x="250" y="194" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">LangGraph</text>
   <svg viewBox="0 0 24 24" fill="#24292f" x="328" y="124" width="44" height="44" preserveAspectRatio="xMidYMid meet">
-    <path d="M0 0v24h14.4v-4.799h4.8V24H24v-4.8h-4.799v-4.8h-4.8v4.8H4.8V0H0zm14.4 14.4V9.602h4.801V4.8H24V0h-4.8v4.8h-4.8v4.8H9.6v4.8h4.8z" fill="#24292f" />
+    <path d="M11.9998.3598c-2.8272 0-5.1456 2.1733-5.3793 4.94a5.4117 5.4117 0 00-1.2207-.1401C2.418 5.1597 0 7.5779 0 10.5603c0 2.2203 1.341 4.1274 3.2568 4.957a5.3734 5.3734 0 00-.7372 2.7227c0 2.9823 2.4175 5.4002 5.4002 5.4002 1.6627 0 3.1492-.7522 4.1397-1.934.9906 1.1818 2.4773 1.934 4.1398 1.934 2.983 0 5.4004-2.418 5.4004-5.4002 0-.9719-.258-1.883-.7073-2.6708C22.7283 14.7068 24 12.8418 24 10.6795c0-2.9823-2.4175-5.4006-5.3998-5.4006-.417 0-.8223.049-1.2121.1384C17.2112 2.5949 14.867.3598 11.9998.3598zm-5.717 6.8683h10.5924c.7458 0 1.352.605 1.352 1.3487v7.6463c0 .7438-.6062 1.3482-1.352 1.3482h-3.6085l-7.24 3.5491 1.1008-3.5491h-.8447c-.7458 0-1.3522-.6044-1.3522-1.3482V8.5768c0-.7438.6064-1.3487 1.3522-1.3487Z" fill="#24292f" />
   </svg>
-  <text x="350" y="194" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">LiveKit</text>
+  <text x="350" y="194" text-anchor="middle" fill="#24292f" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Noto Sans,Helvetica,Arial,sans-serif" font-size="12">WebRTC</text>
 </svg>

@@ -13,7 +13,7 @@ Learning everyday and trying to think outside the box!
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/stack-right-dark.svg" />
-    <img src="assets/stack-right-light.svg" width="400" alt="Tailwind CSS, FastAPI, Hono, Bun, Cloudflare Workers, Docker, LangGraph, and LiveKit" />
+    <img src="assets/stack-right-light.svg" width="400" alt="Tailwind CSS, FastAPI, Hono, Bun, Cloudflare Workers, Docker, LangGraph, and WebRTC" />
   </picture>
 </p>
 
