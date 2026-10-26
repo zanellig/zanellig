@@ -19,7 +19,7 @@ i enjoy exploring new technologies, understanding how things work under the hood
   </picture>
 </p>
 
-## languages I mostly use
+## languages in my recent work
 
 <p>
   <picture>
@@ -30,10 +30,17 @@ i enjoy exploring new technologies, understanding how things work under the hood
 
 <sub>share of the lines me and my agents added in the last 12 months.</sub>
 
+## contact
+
+open to software engineering opportunities and collaborations.
+
+reach me at gonzalozanelli1@gmail.com 📩
+
+---
+
+### now playing
 <p>
   <a href="https://zanelli.vercel.app/now-playing/open">
     <img src="https://zanelli.vercel.app/now-playing.png" width="240" alt="What I'm listening to on Spotify" />
   </a>
 </p>
-
-i'm open to new opportunities, contact me at: gonzalozanelli1@gmail.com 📩
