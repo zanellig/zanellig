@@ -30,6 +30,11 @@ i enjoy exploring new technologies, understanding how things work under the hood
 
 <sub>share of the lines me and my agents added in the last 12 months.</sub>
 
+## open source contributions
+
+- **[headroom](https://github.com/headroomlabs-ai/headroom/pull/731)**: made `headroom wrap codex` respect `CODEX_HOME`, centralizing Codex config path resolution, with regression tests. merged, shipped in 0.25.0
+- **[drizzle-orm](https://github.com/drizzle-team/drizzle-orm/pull/4865)**: make `drizzle-zod`'s schema factory use the caller's custom `zod` instance. superseded by v1
+
 ## contact
 
 open to software engineering opportunities and collaborations.
