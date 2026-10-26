@@ -14,6 +14,11 @@ desktop and wrap onto separate lines on smaller screens. The README selects
 the version matching the reader's color scheme.
 No external icon requests or custom README CSS are required.
 
+The README URLs for `stack-right-dark.svg` and `stack-right-light.svg` include a
+`?v=` parameter containing the first 12 characters of the file's SHA-256 hash.
+After editing either graphic, update its version in the README to refresh cached
+images. Compute the hash with `sha256sum assets/stack-right-*.svg`.
+
 Dark colors: icons `#d1d9e0`, details `#8b949e` and `#a5afb8`, labels `#c9d1d9`.
 Light colors: icons `#24292f`, details `#57606a` and `#424a53`, labels `#24292f`.
 The SQLite wordmark is omitted so only its database and feather symbol appears.
