@@ -19,17 +19,6 @@ i enjoy exploring new technologies, understanding how things work under the hood
   </picture>
 </p>
 
-## languages in my recent work
-
-<p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg" />
-    <img src="assets/languages-light.svg" width="400" alt="Share of the lines I added in the last 12 months by language, in my personal repos and in cogniarg" />
-  </picture>
-</p>
-
-<sub>share of the lines me and my agents added in the last 12 months.</sub>
-
 ## open source contributions
 
 - **[safe-email-html](https://github.com/cogniarg/safe-email-html)**: render untrusted inbound email HTML without letting the sender run code, track the reader, or disguise where a link goes. extracted from the email platform I built at Cogniar. [on npm](https://www.npmjs.com/package/safe-email-html).
@@ -44,7 +33,21 @@ reach me at gonzalozanelli1@gmail.com 📩
 
 ---
 
+### languages in my recent work
+
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg" />
+    <img src="assets/languages-light.svg" width="400" alt="Share of the lines I added in the last 12 months by language, in my personal repos and in cogniarg" />
+  </picture>
+</p>
+
+<sub>share of the lines me and my agents added in the last 12 months.</sub>
+
+---
+
 ### now playing
+
 <p>
   <a href="https://zanelli.vercel.app/now-playing/open">
     <img src="https://zanelli.vercel.app/now-playing.png" width="240" alt="What I'm listening to on Spotify" />
