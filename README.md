@@ -1,10 +1,12 @@
-Hi there!
+hi there!
 
-I'm a Systems Eng. student and Software Developer based in Buenos Aires, I like to experiment with new technologies and stuff I come accross on the internet.
+i'm Gonzalo, a Systems Eng. student and Software Developer based in Buenos Aires 🇦🇷 
 
-Learning everyday and trying to think outside the box!
+i mostly work with TypeScript and Python, building web-based systems and tools.
 
-## Tools I work with
+i enjoy exploring new technologies, understanding how things work under the hood, and finding simple solutions to complicated problems.
+
+## tools I work with
 
 <p>
   <picture>
@@ -17,7 +19,7 @@ Learning everyday and trying to think outside the box!
   </picture>
 </p>
 
-## Languages
+## languages I mostly use
 
 <p>
   <picture>
@@ -26,12 +28,12 @@ Learning everyday and trying to think outside the box!
   </picture>
 </p>
 
-<sub>Share of the lines I added in the last 12 months.</sub>
-
-I try to contribute to the great OSS projects that I use on the daily.
+<sub>share of the lines me and my agents added in the last 12 months.</sub>
 
 <p>
   <a href="https://zanelli.vercel.app/now-playing/open">
     <img src="https://zanelli.vercel.app/now-playing.png" width="240" alt="What I'm listening to on Spotify" />
   </a>
 </p>
+
+i'm open to new opportunities, contact me at: gonzalozanelli1@gmail.com 📩
