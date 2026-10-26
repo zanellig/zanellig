@@ -12,8 +12,8 @@ Learning everyday and trying to think outside the box!
     <img src="assets/stack-left-light.svg" width="400" alt="Python, TypeScript, React, TanStack, PostgreSQL, SQLite, Redis, and Drizzle" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/stack-right-dark.svg" />
-    <img src="assets/stack-right-light.svg" width="400" alt="Tailwind CSS, FastAPI, Hono, Bun, Cloudflare Workers, Docker, LangGraph, and WebRTC" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/stack-right-dark.svg?v=0efd1c2653c1" />
+    <img src="assets/stack-right-light.svg?v=95b7ac6ffeb1" width="400" alt="Tailwind CSS, FastAPI, Hono, Bun, Cloudflare Workers, Docker, LangGraph, and WebRTC" />
   </picture>
 </p>
 
